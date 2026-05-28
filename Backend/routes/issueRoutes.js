@@ -13,8 +13,8 @@ router.get("/",    getIssues);
 router.get("/:id", getIssueById);
 
 // ── Logged-in citizens only ───────────────────────────────────────────────────
-router.post("/",             protect, createIssue);     // must be logged in to report
-router.post("/:id/upvote",  protect, upvoteIssue);      // must be logged in to upvote
+router.post("/",             protect, createIssue);     
+router.post("/:id/upvote",  protect, upvoteIssue);      
 router.post("/:id/comment", protect, addComment);
 
 // ── Admin (any level >= 1) ────────────────────────────────────────────────────

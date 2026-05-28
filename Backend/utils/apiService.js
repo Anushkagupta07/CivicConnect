@@ -1,8 +1,3 @@
-// src/services/api.js
-// ─── Central Axios-free API layer using fetch ─────────────────────────────────
-// Drop this file in Frontend/src/services/api.js
-// Usage: import { issueAPI, authAPI } from "./services/api"
-
 const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 
 // ── Helper: build headers with optional auth token ────────────────────────────

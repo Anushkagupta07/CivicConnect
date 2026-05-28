@@ -1,16 +1,3 @@
-// services/escalationService.js
-// ─────────────────────────────────────────────────────────────────────────────
-// Runs on a schedule. For each unresolved issue that has been idle beyond the
-// threshold for its current level, it auto-escalates to the next level.
-//
-// Idle thresholds (configurable via .env):
-//   Level 1 (Ward)     → escalate after ESCALATE_L1_HOURS  (default 48h)
-//   Level 2 (District) → escalate after ESCALATE_L2_HOURS  (default 72h)
-//   Level 3 (City)     → no further escalation possible
-//
-// Priority multiplier — Critical/High issues escalate faster:
-//   Critical → 0.5×  High → 0.75×  Medium → 1×  Low → 1.5×
-// ─────────────────────────────────────────────────────────────────────────────
 const Issue = require("../models/Issue");
 
 const PRIORITY_MULTIPLIER = { Critical: 0.5, High: 0.75, Medium: 1, Low: 1.5 };

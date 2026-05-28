@@ -67,9 +67,9 @@ const createIssue = async (req, res, next) => {
       media: media || [],
       ward:     ward     || req.user?.ward     || "",
       district: district || req.user?.district || "",
-      reportedBy:    req.user._id,   // guaranteed logged-in via protect middleware
+      reportedBy:    req.user._id,   
       lastActivityAt: new Date(),
-      priority: "Low",               // always starts Low; upvotes will raise it
+      priority: "Low",              
     });
 
     res.status(201).json({ success: true, issue });

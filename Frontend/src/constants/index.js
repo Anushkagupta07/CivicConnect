@@ -17,9 +17,7 @@ export const CATEGORIES = [
   "Other",
 ];
 
-// ── Upvote thresholds → auto priority upgrade ─────────────────────────────────
-// When an issue crosses these upvote counts its priority is bumped automatically.
-// Matching thresholds in issueController.js (keep in sync).
+
 export const UPVOTE_THRESHOLDS = {
   Medium:   10,   //  10+ upvotes  → Medium
   High:     25,   //  25+ upvotes  → High
