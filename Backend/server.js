@@ -13,6 +13,7 @@ const app = express();
 
 const allowedOrigins = [
   "http://localhost:5173",
+  "http://civic-connect-final.vercel.app",
   "https://civic-connect-ochre.vercel.app"
 ];
 
