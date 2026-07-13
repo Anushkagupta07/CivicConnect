@@ -11,17 +11,18 @@
 [🗺️ API Reference](#️-api-reference)
 
 
----
 
 ## 📌 What is CivicConnect?
 
 CivicConnect is a full-stack MERN application that lets registered citizens report local civic issues — potholes, broken streetlights, overflowing drains — and rally their community to upvote them. The more upvotes an issue gets, the higher its priority climbs automatically. If authorities don't act within a set time window, the issue auto-escalates up a 3-tier admin hierarchy (Ward → District → City), ensuring no report gets buried.
 
+
+
 ### The problem it solves
 
 Traditional civic complaint systems are black boxes — you file a complaint and never hear back. CivicConnect makes the entire pipeline transparent: every status change, every escalation, every assignment is visible to the public in real time.
 
----
+
 
 ## ✨ Features
 
@@ -50,7 +51,7 @@ Traditional civic complaint systems are black boxes — you file a complaint and
   - District → City after 72 h idle
 - 👥 **Team management panel** — promote/demote users from the dashboard
 
----
+
 
 ## 🛠️ Tech Stack
 
@@ -83,13 +84,13 @@ Frontend (MVC-inspired)
 ├── context/     → Global state (AuthContext, IssueContext)
 ├── hooks/       → Reusable logic
 └── services/    → API layer    (all fetch() calls isolated here)
-```
 
----
+
+
 
 ## 📁 Project Structure
 
-```
+
 CivicConnect/
 ├── README.md
 ├── Backend/
