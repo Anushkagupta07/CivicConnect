@@ -77,7 +77,7 @@ Traditional civic complaint systems are black boxes — you file a complaint and
 | **Render** | Hosting |
 
 ### Architecture
-```
+
 Frontend (MVC-inspired)
 ├── pages/       → Controllers  (smart, read context, call hooks)
 ├── components/  → Views        (pure UI — props in, JSX out, no API calls)
@@ -124,7 +124,7 @@ CivicConnect/
         ├── components/      # Navbar, IssueCard, MapPicker, AllIssuesMap…
         └── pages/           # HomePage, ReportPage, IssuesPage,
                              #   AdminPage, SignupPage, MapPage…
-```
+
 
 ---
 
@@ -138,20 +138,20 @@ CivicConnect/
 ```bash
 git clone https://github.com/yourusername/civicconnect.git
 cd civicconnect
-```
+
 
 ### 2 — Backend
 ```bash
 cd Backend
 npm install
 cp .env.example .env
-```
+
 
 Edit `Backend/.env` — fill in **two things only**:
 ```env
 MONGO_URI=mongodb+srv://<user>:<pass>@<cluster>.mongodb.net/civicconnect?retryWrites=true&w=majority
 JWT_SECRET=any_random_string_min_32_characters
-```
+
 
 ```bash
 npm run dev
@@ -165,7 +165,7 @@ cd ../Frontend
 npm install
 npm run dev
 # http://localhost:5173
-```
+
 
 > ✅ No URL configuration needed. The Vite proxy forwards all `/api/*` calls to the backend automatically — works on every machine out of the box.
 
@@ -179,7 +179,7 @@ npm run dev
   "adminLevel": 3,
   "city": "Your City"
 }
-```
+
 3. Log out and log back in → you're now **City Admin (L3)**
 
 ---
